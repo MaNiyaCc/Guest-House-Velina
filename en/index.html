@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest House Velina</title>
+
+    <link rel="stylesheet" href="../home.css">
+    <!-- CSS for full calender -->
+    <link href="https://fullcalendar.io/js/fullcalendar-3.8.2/fullcalendar.min.css" rel="stylesheet" />
+    <!-- JS for jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- JS for full calender -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.2/fullcalendar.min.js"></script>
+</head>
+
+<body>
+    <nav id="navbar">
+        <a href="../index.html">
+            <div class="logo">
+                Guest House </br>
+                Velina
+            </div>
+        </a>
+        <div class="nav-links">
+            <a href="#rooms">rooms</a>
+            <a href="#calendar">events</a>
+            <a href="#rules">rules</a>
+        </div>
+    </nav>
+    <main>
+        <div class="wrap">
+            <div id="slider">
+                <div class="slide slide1">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="description" id="rooms">
+            <div>
+                <h2>House Description</h2>
+                <p>Guest house Velina is an old town house in the seaside
+                    village Velika. The house is completely renovated,
+                    ready to welcome guests from all around the world.
+                    The three stores house has 4 bedrooms, living room, kitchen,
+                    3 bathrooms,small yard and a summer kitchen.
+                    It is perfect for big groups or families.
+                    The nearest beach is within 5 minutes drive, in village Lozenetz.
+                    There you can also find supermarkets, greens market,
+                    bars and restaurants.The house is surrounded by beautiful forrest,
+                    perfect for walks, when the heat is unbearable.
+                    The house is located in village Velika, a beautiful small village on the entrance of a forrest, that
+                    combines the beauty of the mountains and the chilly and sunny feeling of the seaside</p>
+            </div>
+            <img src="../images/house2.jpg" alt="Velina House" />
+        </section>
+       <!-- <div class="date-picker">
+            <div class="selected-date">
+                Pick a date
+            </div>
+
+            <div class="dates">
+                <div class="month">
+                    <div class="arrows prev-mth">&lt;</div>
+                    <div class="mth"></div>
+                    <div class="arrows next-mth">&gt;</div>
+                </div>
+
+                <div class="days"></div>
+            </div>
+        </div>-->
+        <section class="rooms">
+            <div class="room" onclick="onRoomClick('floor1')">
+                1. floor
+            </div>
+
+            <div class="room" onclick="onRoomClick('floor2')">
+                2. floor
+            </div>
+            <div class="room" onclick="onRoomClick('floor3')">
+                3. floor
+            </div>
+            <div class="room" onclick="onRoomClick( 'kitchen' )">
+                kitchen
+            </div>
+            <div class="room" onclick="onRoomClick( 'outdoors' )">
+                outdoors
+            </div>
+
+        </section>
+        <div id='calendar-container'>
+            <div id='calendar'></div>
+        </div>
+
+
+
+
+        <!-- <section class="booking-calendar" id="booking-calendar">
+            <h3>Calendar for events</h3>
+            <section class="days">
+                <div class="day"></div>
+                <div class="day active-day"></div>
+                <div class="day">03/06 Fire dancers festival</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day">24/06 Jazz fest Lozenets</div>
+                <div class="day">25/06 Jazz fest Lozenets</div>
+                <div class="day">26/06 Jazz fest Lozenets</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day">25/07 Art festival Lozents</div>
+                <div class="day">26/07 Art festival Lozents</div>
+                <div class="day">27/07 Art festival Lozent</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day active-day">06/09 Fish Festival</div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+            </section>
+        </section> -->
+
+        <section class="rules" id="rules">
+            <h3>Rules:</h3>
+            <details>
+                <summary>Don't smoke inside</summary>
+                <p>Smoking in the rooms and in the house is forbidden. If you smoke anywhere inside the house, you will
+                    be fined and your reservation will be terminated without refund.
+                    Smoking is permitted on the outside areas and on the balcony and you are obligated to clean after
+                    yourself. Any damage would be fined.
+                </p>
+            </details>
+
+            <details>
+                <summary>Only pets under 10 kg and with established hygiene are allowed </summary>
+                <p>You are incouraged to bring your pet to the house as long as you email the owner in advance providing
+                    information about the pet. Your pet should also have established hygiene and behaviour habits. If
+                    there is any damage made by it, you will have to pay for the repairment.</p>
+            </details>
+
+            <details>
+                <summary>Check in and check out rules.</summary>
+                <p>You can check in the house first after 14 o'clock as general hotel rule. You are obligated to check
+                    out of the house before 11 o'clock. With any change you MUST inform us by email.</p>
+            </details>
+
+            <details>
+                <summary>Parties and loud noises</summary>
+                <p>We understand you are on vacation and you might want to celebrate by throwing a party or listening to
+                    loud music. However we ask you to obey the Bulgarian law for loud noises and keep it down after 23
+                    o'clock.
+                    We politely ask you also to respect also the time between 14 and 16, especially on the weekends as
+                    this is common time for bulgarian people to rest.
+                </p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <div class="logo">
+            Guest House </br>
+            Velina
+        </div>
+        <div class="contact">
+            <span>
+                <p>Email:</p>
+                <p>ntlmarinova@....</p>
+            </span>
+            <span>
+                <p>Phone</p>
+                <p>+359 8900000</p>
+            </span>
+        </div>
+        <div class="location">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13620.154206739764!2d27.77751747252893!3d42.179001930218675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40a12d5ae42dde69%3A0xaa17ed02ca649abf!2sVelina%20house!5e0!3m2!1sbg!2sdk!4v1655991106438!5m2!1sbg!2sdk"></iframe>
+        </div>
+    </footer>
+
+
+
+
+    <section class="room-modal">
+        <img id="close-modal" src="../images/close.png" alt="close" onclick="hideRoomModal()" />
+        <img id="room-preview" src="" alt="room" />
+    </section>
+
+    <section id="booking-modal">
+        <img id="close-booking-modal" src="../images/close.png" alt="close" onclick="hideBookingModal()" />
+
+        <!-- <div class="booking-form">
+            <h3>Please write your details</h3>
+            <form class="booking-form-element">
+                <div class="input-field">
+                    <label for="firstName">First name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Family name:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Phone number:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <div class="input-field">
+                    <label for="firstName">Billing address:</label>
+                    <input id="firstName" name="firstName" placeholder="Write your first name..." minlength="4" />
+                </div>
+
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        </div> -->
+      <!--  <div class="event-info">
+            <div class="event-info-element">
+                <img src="../images/fishfestival.jpg" />
+                <div class="meta-info">
+                    <p>Date: 06/09/2022</p>
+                    <p>Location: The bay in Tsarevo</p>
+                </div>
+                <h3>The festival of the Fish</h3>
+                <div class="description">The fish festival in Tsarevo is an anual event, gathering people from all
+                    around the country.
+                    It starts at noon and offers fun for young and old with a carnaval, live band, fish soup cook out
+                    with one of the most famous chefs in Bulgaria-Uti Bachvarov.
+                    There everyone can taste the best seafood meals, experience bulgarian culture and hospitality and
+                    create long lasting memories.
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <script src="../index.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#calendar').fullCalendar({
+                defaultView: 'month',
+
+                eventDidMount: function (info) {
+                    var tooltip = new Tooltip(info.el, {
+                        title: info.event.extendedProps.description,
+                        placement: 'top',
+                        trigger: 'hover',
+                        container: 'body'
+                    });
+                },
+                events: [
+                    {
+                        title: 'Art Fest Lozenetz',
+                        start: '2022-07-25', // change with current date
+                        end: '2022-07-27'
+                    },
+                    {
+                        title: 'Jazz fest Tsarevo',
+                        start: '2022-07-24',
+                        end: '2022-07-27'
+                    },
+                    {
+                        title: 'Farmers market Tsarevo',
+                        start: '2022-07-29',
+                        description: 'Market in the hearth of the city, selling homemade organic food'
+                    },
+                    {
+                        title: 'Saint Iliya celebration',
+                        description: 'description for All Day Event',
+                        start: '2022-08-02'
+                    },
+                   
+
+                ]
+            });
+        });
+    </script>
+
+</body>
+
+</html>
